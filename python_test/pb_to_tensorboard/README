@@ -1,0 +1,3 @@
+mkdir tensorboard
+python import_pb_to_tensorboard.py --model_dir $(path_pbfile) --log_dir ./tensorboard/
+tensorboard --logdir=./tensorboard/

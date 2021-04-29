@@ -9,7 +9,7 @@ class avi2jpg:
         success,image = vidcap.read()
         count = 0
         while success:
-            framecount = "./frames/{number:06}".format(number=count)
+            framecount = "./frames_mask_25000/{number:06}".format(number=count)
             cv2.imwrite(framecount+".jpg", image)     # save frame as JPEG file      
             success,image = vidcap.read()
             print('Read a new frame: ', success)
